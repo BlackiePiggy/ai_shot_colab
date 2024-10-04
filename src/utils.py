@@ -129,6 +129,7 @@ def detect_shot(frame, trace, width, height, sess, image_tensor, boxes, scores, 
         # print("ball in hand")
 
     # getting openpose keypoints
+    import pyopenopse as op
     datum.cvInputData = frame
     opWrapper.emplaceAndPop(op.VectorDatum([datum]))
     try:
